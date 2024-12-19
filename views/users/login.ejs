@@ -1,0 +1,18 @@
+<% layout("./layouts/boilerPlate.ejs") -%>
+
+    <div class="row">
+        <h1 class="col-6 offset-3">Login on <span class="oyo ">oyo</span></h1>
+        <div class="col-6 offset-3">
+            <form action="/login" method="post" class="needs-validation mt-5 mb-5" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input class="form-control" type="text" name="username" id="username" required />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input class="form-control" type="text" name="password" id="password" required />
+                </div>
+                <button class="btn btn-success">login</button>
+            </form>
+        </div>
+    </div>
